@@ -1,0 +1,137 @@
+body 
+{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-image: url("../back_image/images2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* components are in the center*/
+  align-items: center;
+}
+
+
+
+/* middle rectangle that contains form and fetched user info */
+.main-frame
+ {
+  background: rgba(239, 255, 100, 0.5); /* for transparency last input = 0.5 */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border: 5px solid rgba(239, 255, 100, 0.3);
+  padding: 2.5rem;
+  display: flex;  /*row */
+  align-items: center;
+  justify-content: space-around;
+  height: 70%
+}
+
+/* frame of form */
+.form-frame 
+{
+  background-color: white;
+  padding: 1rem; 
+  border-radius: 1rem;
+  width: 30rem;
+}
+
+.form-frame form 
+{
+  min-height: 15rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input 
+{
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+input[type="text"] 
+{
+  box-sizing: border-box;
+  height: 5rem;
+}
+
+input[type="text"]:focus 
+{
+  outline: none;
+}
+
+input[type="submit"]
+{
+  background-color: green;
+  height: 3.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* container of fetched user info */
+.info-frame 
+{
+  height: 80%;
+  min-height: 10rem;
+  min-width: 20rem;
+  margin-right: 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column; /* arrange componet in a column*/
+  padding: 1rem;
+  border-radius: 1rem; /* four corners*/
+}
+
+/* info container top row */
+.myrow 
+{
+  display: flex;
+  width: 100%;
+}
+
+.center-text 
+{
+  text-align: center;
+}
+
+.info-column 
+{
+  margin: auto;
+  padding: 1rem;
+}
+
+/* image column */
+.image-column 
+{
+  min-width: 10rem;
+}
+
+.image-column img
+ {
+  width: 10rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+
+pre
+{
+  margin: 0;
+  font-family: inherit;
+}
+
+
+.bio-container
+{
+  padding: 1rem;
+}
